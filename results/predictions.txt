@@ -1,0 +1,17 @@
+Model           | Image Name           | True Type    | Predict      | Conf  
+ResNet18        | pituitary_2.jpg      | pituitary    | pituitary    | 90.2%
+ResNet18        | pituitary_1.jpg      | pituitary    | pituitary    | 91.3%
+ResNet18        | meningioma_2.jpg     | meningioma   | meningioma   | 91.3%
+ResNet18        | meningioma_1.jpg     | meningioma   | meningioma   | 93.5%
+ResNet18        | notumor_1.jpg        | notumor      | notumor      | 91.9%
+ResNet18        | notumor_2.jpg        | notumor      | notumor      | 92.4%
+ResNet18        | glioma_2.jpg         | glioma       | glioma       | 91.3%
+ResNet18        | glioma_1.jpg         | glioma       | glioma       | 92.5%
+Baseline_CNN    | pituitary_2.jpg      | pituitary    | pituitary    | 88.0%
+Baseline_CNN    | pituitary_1.jpg      | pituitary    | pituitary    | 94.3%
+Baseline_CNN    | meningioma_2.jpg     | meningioma   | meningioma   | 89.2%
+Baseline_CNN    | meningioma_1.jpg     | meningioma   | meningioma   | 55.8%
+Baseline_CNN    | notumor_1.jpg        | notumor      | notumor      | 85.5%
+Baseline_CNN    | notumor_2.jpg        | notumor      | notumor      | 95.0%
+Baseline_CNN    | glioma_2.jpg         | glioma       | glioma       | 88.6%
+Baseline_CNN    | glioma_1.jpg         | glioma       | glioma       | 90.0%
