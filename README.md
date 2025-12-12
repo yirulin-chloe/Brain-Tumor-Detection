@@ -3,7 +3,7 @@
 ## Project Overview
 Brain tumors seriously affect lives worldwide. In the US alone, nearly 700,000 people are living with a brain tumor. Early detection is critical: if tumors are detected at an early stage, the patient survival rate can jump from **5% to 90%**.
 
-The goal of this project is to train Deep Learning models with over 90% accuracy to assist in early detection, potentially saving lives and reducing healthcare costs. This project detects brain tumors from MRI images using Convolutional Neural Networks (CNNs).
+The goal of this project is to train Deep Learning models with over 90% accuracy to assist in early detection, potentially saving lives and reducing healthcare costs. This project detects brain tumors from MRI images using **Convolutional Neural Networks (CNNs)** and **ResNet18** architectures.
 
 **Data Source:** [Kaggle: Brain Tumor MRI Dataset](https://www.kaggle.com/datasets/masoudnickparvar/brain-tumor-mri-dataset/data) containing 4 classes: Glioma, Meningioma, Pituitary, and No Tumor.
 
@@ -72,7 +72,9 @@ python demo/demo.py
 
 ### Expected Output
 
-**1. Console Output & Text Report:** You will see a prediction table printed to your terminal.
+**1. Console Output & Text Report** 
+
+You will see a prediction table printed to your terminal.
 
 Below is an expample output:
 
@@ -84,14 +86,15 @@ Baseline_CNN    | glioma_1.jpg         | glioma       | glioma       | 88.6%
 ```
 A file named `results/predictions.txt` will contain the detailed classification confidence scores.
 
-## **2. Visual Results**
+**2. Visual Results**
+
 Annotated images will be generated in the `results/` folder.
 
 The predicted class and confidence score are overlaid directly onto the MRI scans for immediate visual verification on the upper-left side of the scan.
 
-| Input Image | Baseline CNN Prediction | ResNet18 Prediction |
+| Input Image | Baseline CNN | ResNet18 |
 | :---: | :---: | :---: |
-| <img src="demo/glioma_1.jpg" width="150"/> <br> *Original* | <img src="results/Baseline_CNN_glioma_1.jpg" width="150"/> <br> *Baseline CNN* | <img src="results/ResNet18_glioma_1.jpg" width="150"/> <br> *ResNet18* |
+| <img src="demo/glioma_1.jpg" width="150"/> <br> *Original* | <img src="results/Baseline_CNN_glioma_1.jpg" width="150"/> <br> *Pred: glioma(90.0%)* | <img src="results/ResNet18_glioma_1.jpg" width="150"/> <br> *Pred: glioma(92.5%)* |
 
 
 *(Note: The images above assume `glioma_1.jpg` exists in your demo folder and the `demo.py` has run.)*
